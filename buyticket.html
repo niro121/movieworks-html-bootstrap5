@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite Cinemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+    
+
+<!-- ===============Main Menu===============  -->
+
+<nav class="navbar navbar-expand-lg  fixed-top">
+    <div class="container navbar-container">
+      <a class="navbar-brand" href="/">
+        <img src="img/mw_header_logo.png" class="img-fluid header-logo" alt="Lite Cinemas logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+
+          <li class="nav-item buy-tkt mt-auto mb-auto">
+            <a class="nav-link buy-tkt  active" href="/buyticket.html">Buy Tickets</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<!-- banner section  -->
+
+<section id="bt-banner">
+  <img src="img/banner_two.jpeg" alt="Movie" class="img-fluid w-100"> 
+  <div class="container">
+    <div class="row">
+      <div class="bt-dropdown col-md-12 col-sm-12">
+        <form id="now-showing-list">
+          <select class="form-select px-3" aria-label="Default select buytkt">
+
+            <option selected>Avatar: the way of water (3D)</option>
+            <option value="1">Thunivu</option>
+            <option value="2">Gajaman (3D)</option>
+            <option value="3">Gaadi</option>
+            <option value="3">Pathaan [Hindi]</option>
+            <option value="3">Varisu</option>
+
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- tab section -->
+
+<section id="showtime">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <ul class="nav nav-tabs date-ul" id="date_tab" role="tablist">
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+              <div class="month">Jan</div> 
+              <div class="date">26</div> 
+              <div class="day">Thu</div>
+            </button>
+          </li>
+          
+
+
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+              
+              <div class="month">Jan</div> 
+              <div class="date">27</div> 
+              <div class="day">Fri</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+              <div class="month">Jan</div> 
+              <div class="date">28</div> 
+              <div class="day">Sat</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="false" new>
+              <div class="month">Jan</div> 
+              <div class="date">29</div> 
+              <div class="day">Sun</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="false" new>
+              <div class="month">Jan</div> 
+              <div class="date">30</div> 
+              <div class="day">Mon</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="false" new>
+              <div class="month">Jan</div> 
+              <div class="date">31</div> 
+              <div class="day">Tue</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="false" new>
+              <div class="month">Feb</div> 
+              <div class="date">01</div> 
+              <div class="day">Wed</div>
+            </button>
+          </li>
+          <li class="nav-item bt-nav" role="presentation">
+            <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new-tab-pane" type="button" role="tab" aria-controls="new-tab-pane" aria-selected="false" new>
+              <div class="month">Feb</div> 
+              <div class="date">02</div> 
+              <div class="day">Thu</div>
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="theater-td py-4">
+                    <p class="theater-name">VoxX Lite</p>
+                    <p class="location">Avissawella</p>
+                  </td>
+                  <td class="py-4">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn show-time-btn" data-bs-toggle="modal" data-bs-target="#buytktModal">09:30 AM</button>
+
+
+
+<!-- Modal buytktModal-->
+<div class="modal fade" id="buytktModal" tabindex="-1" aria-labelledby="buytktModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content buy-tkt-modal">
+      <div class="container">
+        <div class="modal-header">
+          <h2 class="modal-title bt-title" id="buytktModalLabel">Tickets</h2>
+          <!-- <button type="button" class="btn-close bt-close" data-bs-dismiss="modal" aria-label="Close"> -->
+            <i class="fa-solid fa-circle-xmark btn-close" data-bs-dismiss="modal"></i>
+            
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-12 pt-3 pb-5">
+              <h3>How Many Tickets?</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 offset-md-3 pt-3 pb-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6 class="howmany-tkts-h6 pb-3">No. of ADULT Tickets</h6>
+                  <select class="form-select text-center" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+    
+                <div class="col-md-4">
+                  <h6 class="howmany-tkts-h6 pb-3">No. of CHILD Tickets</h6>
+                  <select class="form-select text-center" aria-label="Default select example">
+                    <option selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+    
+                <div class="col-md-4">
+                  <h6 class="howmany-tkts-h6 pb-3">Total Tickets</h6>
+                  <button type="button" class="btn btn-total w-100">4</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-10 offset-md-1">
+                <button type="button" class="btn btn-border show-time-btn" data-bs-toggle="modal" data-bs-target="#seatPlanModal">CONTINUE</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal 2 seatPlanModal-->
+<div class="modal fade" id="seatPlanModal" tabindex="-1" aria-labelledby="seatPlanModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content buy-tkt-modal">
+      <div class="container">
+        <div class="modal-header">
+          <h2 class="modal-title bt-title" id="seatPlanModalLabel"><i class="fa-solid fa-circle-arrow-left pe-3"></i>Showtimes</h2>
+          <!-- <button type="button" class="btn-close bt-close" data-bs-dismiss="modal" aria-label="Close"> -->
+            <i class="fa-solid fa-circle-xmark btn-close bt-close" data-bs-dismiss="modal"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <h6 class="movie-name">Avatar: the way of water (3D)</h6>
+                <h6 class="movie-theatre">Milano - Diamond</h6>
+                <h6 class="movie-location">Kegalle</h6>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6 class="howmany-tkts-h6 pb-3">No. of ADULT Tickets</h6>
+                    <select class="form-select text-center" aria-label="Default select example">
+                      <option selected>0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+        
+                  <div class="col-md-4">
+                    <h6 class="howmany-tkts-h6 pb-3">No. of CHILD Tickets</h6>
+                    <select class="form-select text-center" aria-label="Default select example">
+                      <option selected>0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </div>
+        
+                  <div class="col-md-4">
+                    <h6 class="howmany-tkts-h6 pb-3">Total Tickets</h6>
+                    <button type="button" class="btn btn-total w-100">4</button>
+                  </div>
+        
+                </div>
+              </div>
+              
+        
+              <div class="col-md-3">
+                <a href="/ticket.html">
+                  <button class="btn btn-border">CONTINUE</button>
+                </a>
+              </div>
+        
+            </div>
+          </div>
+        </section>
+
+        <section id="showtime_btn">
+          <div class="container">
+              <div class="row">
+                <h6 class="howmany-tkts-h6 pb-3">Showtime</h6>
+                <div class="col-md-6 offset-md-3">
+                  <button class="btn showtime-btn btn-secondary me-3 mb-3">10:30 AM</button>
+                  <button class="btn showtime-btn btn-secondary me-3 mb-3">1:30 PM</button>
+                  <button class="btn showtime-btn btn-secondary me-3 mb-3">6:30 PM</button>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section id="date_area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 date-time-col">
+                <h2 class="date-time-h2">January 11 Wednesday, 2023</h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="seat_plan">
+          <div class="container">
+            <div class="row seat-area-row text-center">
+              <div class="col-md-12 seat-area-col">
+                <h4 class="date-time-h4">FIRST CLASS</h2>
+                <h6 class="ategory-price-h6">
+                  <span>ADULT Rs.525.00 / </span><span>CHILD Rs.375.00 </span>
+                </h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+              <h5 class="screen mt-5 mb-5">THEATER SCREEN</h5>
+              </div>
+            </div>
+            <div class="row mb-3 text-center">
+              <div class="col-md-12 table-responsive">
+                <table class="table seat_plan_wrap">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="seat_right_row ng-binding"></div>
+                      </td>
+                      <td class="seat_row">
+                        <span class="seat">
+                          <div>
+                            <a class="">
+                              M1
+                            </a>
+                          </div>
+                        </span>
+                      </td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M2
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M3
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M4
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M5
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M6
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M7
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M8
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M9
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M10
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M11
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M12
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M13
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M14
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M15
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat"><!----></span></td>
+                      <td class="seat_row"><span class="seat"><!----></span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M16
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M17
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M18
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M19
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M20
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M21
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M22
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M23
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              M24
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              M25
+                            </a></div>
+                        </span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="seat_right_row ng-binding"></div>
+                      </td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              L1
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              L2
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L3
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              L4
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              L5
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="unavilable">
+                              L6
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="sold">
+                              L7
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="sold">
+                              L8
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L9
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L10
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L11
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L12
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L13
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L14
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L15
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat"><!----></span></td>
+                      <td class="seat_row"><span class="seat"><!----></span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L16
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L17
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L18
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L19
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L20
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L21
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L22
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L23
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L24
+                            </a></div>
+                        </span></td>
+                      <td class="seat_row"><span class="seat">
+                          <div><a class="">
+                              L25
+                            </a></div>
+                        </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <section id="btn_section">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <a href="/ticket.html">
+                  <button class="btn btn-primary">Next</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="theater-td py-4">
+                    <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                    <p class="location">Wellawatte</p>
+                  </td>
+                  <td class="py-4">
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="theater-td py-4">
+                    <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                    <p class="location">Wellawatte</p>
+                  </td>
+                  <td class="py-4">
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <table class="table-responsive">
+              <tbody>
+                <tr>
+                  <td class="theater-td py-4">
+                    <p class="theater-name">VoxX Lite</p>
+                    <p class="location">Avissawella</p>
+                  </td>
+                  <td class="py-4">
+                    <button type="button" class="btn show-time-btn">09:30 PM</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="theater-td py-4">
+                    <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                    <p class="location">Wellawatte</p>
+                  </td>
+                  <td class="py-4">
+                    <button type="button" class="btn show-time-btn">09:00 PM</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"><table class="table-responsive">
+            <tbody>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">VoxX Lite</p>
+                  <p class="location">Avissawella</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:30 PM</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                  <p class="location">Wellawatte</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:00 PM</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                  <p class="location">Wellawatte</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:00 PM</button>
+                </td>
+              </tr>
+            </tbody>
+          </table></div>
+          <div class="tab-pane fade" id="new-tab-pane" role="tabpanel" aria-labelledby="new-tab" tabindex="0"><table class="table-responsive">
+            <tbody>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">VoxX Lite</p>
+                  <p class="location">Avissawella</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:30 PM</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                  <p class="location">Wellawatte</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:00 PM</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                  <p class="location">Wellawatte</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:00 PM</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="theater-td py-4">
+                  <p class="theater-name">Savoy 3D Dolby ATMOS</p>
+                  <p class="location">Wellawatte</p>
+                </td>
+                <td>
+                  <button type="button" class="btn show-time-btn">09:00 PM</button>
+                </td>
+              </tr>
+            </tbody>
+          </table></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- ========================================= Footer Para Section ========================================= -->
+
+<section id="footer_para">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <p class="footer-para">
+          Movie Works (Pvt) Ltd., is an entertainment based company engaged 
+          in building and operating state of the art luxury mini 
+          cinemas and importing and distributing world class Hollywood and
+           Bollywood movies. We aim to provide the glory and the 
+          magic of world cinema to the Sri Lankan patrons with all its original
+           quality and glamour with most modern technologies available.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ========================================= Main-Footer ========================================= -->
+
+  <section id="main_footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 text-start me-auto">
+          <a class="footer-logo-div me-auto" href="/">
+            <img src="img/mw_header_logo.png" class="img-fluid footer-logo text-start me-auto" alt="Lite-cinemas-logo">
+          </a>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="social-media-icons">
+            <div class="p-2">
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="footer-h5">Movie Works (Pvt) Ltd</h5>
+          <p class="footer-para">No. 01<br>
+            ABC Mawatha,<br>
+            Colombo 04,<br>
+            Sri Lanka
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======================================================Copyright-Footer================================================= -->
+
+  <footer id="main_copyright">
+    <div class="container">
+      <div class="row py-4 copyright-row">
+        <div class="col-md-12 text-center">
+          <p class="copyright_para"> Copyright © 2023 Movie Works (Pvt) Ltd. All Rights Reserved. Designed & Developed by <a href="#">Archmage Solutions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

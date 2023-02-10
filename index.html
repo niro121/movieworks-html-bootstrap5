@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite Cinemas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    
+
+<!-- ========================================= Main Menu =========================================  -->
+
+<nav class="navbar navbar-expand-lg fixed-top d-flex">
+  <div class="container navbar-container">
+    <a class="navbar-brand" href="#">
+      <img src="img/mw_header_logo.png" class="img-fluid header-logo" alt="Lite-cinemas-logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/movies.html">Movies</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/theaters.html">Theaters</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/about.html">About</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/">Careers</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/">News</a>
+        </li>
+        <li class="nav-item mt-auto mb-auto">
+          <a class="nav-link" href="/contact.html">Contact</a>
+        </li>
+        <li class="nav-item buy-tkt mt-auto mb-auto">
+          <a class="nav-link buy-tkt" href="/buyticket.html">Buy Tickets</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!--========================================= banner section =========================================-->
+
+<section id="bt-banner">
+    <img src="img/web_banner.jpg" alt="web_banner" class="banner-web img-fluid w-100"> 
+    <!-- <i class="fa-solid fa-circle-xmark" data-bs-dismiss="modal"></i> -->
+</section>
+
+
+
+  <!-- ========================================= Movie Name Section ========================================= -->
+
+  <section id="name_section">
+    <div class="container">
+        <div class="row name-row mt-auto mb-auto">
+            <div class="col-md-8 col-12 mt-auto mb-auto">
+              <div class="row mt-auto mb-auto">
+                <div class="col-md-12 d-flex">
+                  <i class="fa-solid fa-star pe-2 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-2 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-2 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-2 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-2 mt-auto mb-auto"></i>
+                  <h5 class="now-showing-h5 mt-auto mb-auto">Now Showing</h5>
+                </div>
+                </div>
+                <h1 class="now-showing-topic mt-3">Terminator Genisys</h1>
+              </div>
+            <div class="col-md-2 col-6 mt-auto mb-auto">
+                <button class="btn btn-outline">Buy Tickets</button>
+            </div>
+            <div class="col-md-2 col-6 mt-auto mb-auto">
+                <button class="btn btn-outline">More Info</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================= Now Showing ========================================= -->
+
+<section id="now_showing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="now-showing-h3 mb-5">Now Showing Movies</h3>
+        <div class="owl-carousel nowshowing-owl owl-theme">
+
+          <div class="item p-2">
+            <div class="card">
+              <a href="/single-movie.html">
+                <img src="img/movie_1.jpg" alt="movie one" class="movie-img img-fluid">
+              </a>
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <a href="/single-movie.html"><h4 class="movie-title pt-2">The Night Clerk</h4></a>
+                <a href="#"><p class="watch-text">Watch Trailer</p></a>
+                <div class="bt-div mt-3 text-center">
+                  <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item p-2">
+            <div class="card">
+              <a href="/single-movie.html">
+                <img src="img/movie_2.jpg" alt="movie one" class="movie-img img-fluid">
+              </a>
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <a href="/single-movie.html"><h4 class="movie-title pt-2">The Night Clerk</h4></a>
+                <a href="#"><p class="watch-text">Watch Trailer</p></a>
+                <div class="bt-div mt-3 text-center">
+                  <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item p-2">
+            <div class="card">
+              <a href="/single-movie.html">
+                <img src="img/movie_3.jpg" alt="movie one" class="movie-img img-fluid">
+              </a>
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <a href="/single-movie.html"><h4 class="movie-title pt-2">The Night Clerk</h4></a>
+                <a href="#"><p class="watch-text">Watch Trailer</p></a>
+                <div class="bt-div mt-3 text-center">
+                  <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item p-2">
+            <div class="card">
+              <a href="/single-movie.html">
+                <img src="img/movie_4.jpg" alt="movie one" class="movie-img img-fluid">
+              </a>
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <a href="/single-movie.html"><h4 class="movie-title pt-2">The Night Clerk</h4></a>
+                <a href="#"><p class="watch-text">Watch Trailer</p></a>
+                <div class="bt-div mt-3 text-center">
+                  <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item p-2">
+            <div class="card">
+              <a href="/single-movie.html">
+                <img src="img/movie_2.jpg" alt="movie one" class="movie-img img-fluid">
+              </a>
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <a href="/single-movie.html"><h4 class="movie-title pt-2">The Night Clerk</h4></a>
+                <a href="#"><p class="watch-text">Watch Trailer</p></a>
+                <div class="bt-div mt-3 text-center">
+                  <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========================================= Upcomming Movies ========================================= -->
+
+<section id="up_comming">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="up-comming-h3 mb-5">Upcomming Movies</h3>
+        <div class="owl-carousel upcomming-owl owl-theme">
+
+          <div class="item p-2">
+            <div class="card">
+              <img src="img/movie_1.jpg" alt="movie one" class="movie-img img-fluid">
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <h4 class="movie-title pt-2">The Night Clerk</h4>
+                <p class="watch-text">Watch Trailer</p>
+                <div class="bt-div mt-3 text-center">
+                  <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item p-2">
+            <div class="card">
+              <img src="img/movie_4.jpg" alt="movie one" class="movie-img img-fluid">
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <h4 class="movie-title pt-2">Alone</h4>
+                <p class="watch-text">Watch Trailer</p>
+                <div class="bt-div mt-3 text-center">
+                  <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item p-2">
+            <div class="card">
+              <img src="img/movie_2.jpg" alt="movie one" class="movie-img img-fluid">
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <h4 class="movie-title pt-2">The Night Clerk</h4>
+                <p class="watch-text">Watch Trailer</p>
+                <div class="bt-div mt-3 text-center">
+                  <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item p-2">
+            <div class="card">
+              <img src="img/movie_3.jpg" alt="movie one" class="movie-img img-fluid">
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <h4 class="movie-title pt-2">Horror Night</h4>
+                <p class="watch-text">Watch Trailer</p>
+                <div class="bt-div mt-3 text-center">
+                  <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item p-2">
+            <div class="card">
+              <img src="img/movie_4.jpg" alt="movie one" class="movie-img img-fluid">
+              <div class="card-body">
+                <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                <h4 class="movie-title pt-2">Alone</h4>
+                <p class="watch-text">Watch Trailer</p>
+                <div class="bt-div mt-3 text-center">
+                  <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ========================================= Footer Para Section ========================================= -->
+
+<section id="footer_para">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <p class="footer-para">
+          Movie Works (Pvt) Ltd., is an entertainment based company engaged 
+          in building and operating state of the art luxury mini 
+          cinemas and importing and distributing world class Hollywood and
+           Bollywood movies. We aim to provide the glory and the 
+          magic of world cinema to the Sri Lankan patrons with all its original
+           quality and glamour with most modern technologies available.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- ========================================= Main-Footer ========================================= -->
+
+  <section id="main_footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 col-6 text-start mb-5 me-auto">
+          <a class="footer-logo-div me-auto" href="/">
+            <img src="img/mw_header_logo.png" class="img-fluid footer-logo text-start me-auto" alt="Lite-cinemas-logo">
+          </a>
+        </div>
+
+
+        <div class="col-md-4 col-12 mb-5">
+          <div class="social-media-icons">
+            <div class="p-2">
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12">
+          <h5 class="footer-h5">Movie Works (Pvt) Ltd</h5>
+          <p class="footer-para">No. 01<br>
+            ABC Mawatha,<br>
+            Colombo 04,<br>
+            Sri Lanka
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======================================================Copyright-Footer================================================= -->
+
+  <footer id="main_copyright">
+    <div class="container">
+      <div class="row py-4 copyright-row">
+        <div class="col-md-12 text-center">
+          <p class="copyright_para"> Copyright © 2023 Movie Works (Pvt) Ltd. All Rights Reserved. Designed & Developed by <a href="#">Archmage Solutions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/custom.js"></script>
+ 
+<script>
+  $(document).ready(function(){
+    $('.nowshowing-owl').owlCarousel({
+      loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:2,
+            nav:false,
+        },
+        1000:{
+            items:4
+        }
+    }
+  })
+  });
+
+
+  $(document).ready(function(){
+    $('.upcomming-owl').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true,
+    nav:true,
+    dots:false,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+        },
+        600:{
+            items:2,
+            nav:false,
+        },
+        1000:{
+            items:4
+        }
+    }
+  })
+  });
+
+
+</script>
+
+</body>
+</html>

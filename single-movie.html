@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lite Cinemas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+
+  <!-- ========================================= Main Menu =========================================  -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container navbar-container">
+      <a class="navbar-brand header-logo" href="/">
+        <img src="img/mw_header_logo.png" class="img-fluid header-logo" alt="Lite-cinemas-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link active" href="/movies.html">Movies</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" href="/theaters.html">Theaters</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" href="/">About</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" href="/">Careers</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" href="/">News</a>
+          </li>
+          <li class="nav-item mt-auto mb-auto">
+            <a class="nav-link" href="/">Contact</a>
+          </li>
+          <li class="nav-item buy-tkt mt-auto mb-auto">
+            <a class="nav-link buy-tkt" href="/buyticket.html">Buy Tickets</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+
+  <!--========================================= banner section =========================================-->
+
+  <section id="bt-banner">
+    <img src="img/single_movies_banner.jpg" alt="single_movies_banner" class="img-fluid w-100">
+  </section>
+
+
+
+
+  <!-- ========================================= Movie Name Section ========================================= -->
+
+  <section id="single_movie_tag">
+    <div class="container">
+      <div class="row movie-tag-row">
+        <div class="col-md-4">
+          <h2 class="single-movie-h2">The Night Clerk</h2>
+          <h5 class="single-movie-genre">Animation, Comedy</h5>
+          <span class="now-tag"><i class="fa-solid fa-calendar-days pe-2"></i>Now Showing</span>
+          <span class="duration-tag"><i class="fa-regular fa-clock pe-2"></i>2 hrs 50 mins</span>
+        </div>
+
+        <div class="col-md-4 mt-auto">
+          <div class="stars">
+            <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+            <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+            <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+            <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+            <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+          </div>
+          <h5 class="rate-now-h5">Rate Now</h5>
+        </div>
+
+        <div class="col-md-4 text-center mt-auto mb-auto">
+          <a href="/buytickets.html" class="btn btn-primary text-center">Buy Tickets</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================= Synopsis Section ========================================= -->
+
+  <section id="synopsis">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <h4 class="now-showing-h4 mb-3">Synopsis</h4>
+          <p class="synopsis-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula eros sit amet
+            est tincidunt aliquet. Fusce laoreet ligula ac ultrices eleifend. Donec hendrerit
+            fringilla odio, ut feugiat mi convallis nec. Fusce elit ex, blandit vitae mattis sit amet,
+            iaculis ac elit. Ut diam mauris, viverra sit amet dictum vel, aliquam ac quam. Ut mi nisl,
+            fringilla sit amet erat et, convallis porttitor ligula. Sed auctor, orci id luctus,
+            venenatis dui dolor euismod risus, et pharetra orci lectus quis sapien. Duis blandit
+            ipsum ac consectetur scelerisque.
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <h4 class="director-h4 mb-3">Directed by</h4>
+          <h6 class="director">Sarath Kothalawala</h6>
+          <h6 class="director">Kumara Thirimadura</h6>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="director-h4 mb-3">Written by</h4>
+          <h6 class="director">Sarath Kothalawala</h6>
+        </div>
+
+        <div class="col-md-4">
+          <h4 class="director-h4 mb-3">Cast</h4>
+          <h6 class="director">Mario Speedwagon</h6>
+          <h6 class="director">Petey Cruiser</h6>
+          <h6 class="director">Anna Sthesia</h6>
+          <h6 class="director">Paul Molive</h6>
+          <h6 class="director">Mario Speedwagon</h6>
+          <h6 class="director">Anna Mull</h6>
+          <h6 class="director">Mario Speedwagon</h6>
+          <h6 class="director">Petey Cruiser</h6>
+          <h6 class="director">Anna Sthesia</h6>
+          <h6 class="director">Paul Molive</h6>
+          <h6 class="director">Anna Mull</h6>
+          <h6 class="director">Paul Molive</h6>
+          <h6 class="director">Mario Speedwagon</h6>
+          <h6 class="director">Anna Mull</h6>
+          <h6 class="director">Mario Speedwagon</h6>
+          <h6 class="director">Petey Cruiser</h6>
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================= Single Movie Thater Section ========================================= -->
+
+  <section id="movie_theater">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="theater-h3 mb-5">Available Theaters</h3>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-3 theater-item p-2">
+          <div class="card theater-card">
+            <a href="/single-theater.html">
+              <div class="image-div thater-img">
+                <img src="img/liberty.png" alt="movie one" class="theater-img img-fluid w-100">
+              </div>
+            </a>
+            <div class="card-body theater-card-body">
+              <a href="/single-movie.html">
+                <h4 class="theater-title pt-2">Liberty Lite</h4>
+              </a>
+              <p class="location-text">Colombo</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 theater-item p-2">
+          <div class="card theater-card">
+            <a href="/single-theater.html">
+              <div class="image-div thater-img">
+                <img src="img/liberty.png" alt="movie one" class="theater-img img-fluid w-100">
+              </div>
+            </a>
+            <div class="card-body theater-card-body">
+              <a href="/single-movie.html">
+                <h4 class="theater-title pt-2">Liberty Lite</h4>
+              </a>
+              <p class="location-text">Colombo</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 theater-item p-2">
+          <div class="card theater-card">
+            <a href="/single-theater.html">
+              <div class="image-div thater-img">
+                <img src="img/liberty.png" alt="movie one" class="theater-img img-fluid w-100">
+              </div>
+            </a>
+            <div class="card-body theater-card-body">
+              <a href="/single-movie.html">
+                <h4 class="theater-title pt-2">Liberty Lite</h4>
+              </a>
+              <p class="location-text">Colombo</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-3 theater-item p-2">
+          <div class="card theater-card">
+            <a href="/single-theater.html">
+              <div class="image-div thater-img">
+                <img src="img/liberty.png" alt="movie one" class="theater-img img-fluid w-100">
+              </div>
+            </a>
+            <div class="card-body theater-card-body">
+              <a href="/single-movie.html">
+                <h4 class="theater-title pt-2">Liberty Lite</h4>
+              </a>
+              <p class="location-text">Colombo</p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary text-center">Buy Tickets</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+   <!-- ========================================= User Reviews Section ========================================= -->
+
+<section id="user_reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="user-reviews-h3 mb-5">User Reviews</h3>
+        <div class="owl-carousel review-owl owl-theme">
+
+          <div class="review-item item p-4">
+            <div class="row">
+              <div class="reivew-div col-md-3">
+                <h5 class="user-name">Anna Mull</h5>
+                <h6 class="date">14.07.2020</h6>
+              </div>
+              <div class="col-md-9">
+                <div class="stars-div pb-3">
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                  <i class="fa-solid fa-star pe-1 mt-auto mb-auto"></i>
+                </div>
+                <p class="review-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicLorem ipsum dolor sit amet, c
+                onsectetur adipiscing elit. Proin vehicula eros sit amet est tincidunt aliquet. Fusce laoreet ligu
+                la ac ultrices eleifend.ula eros sit amet est tincidunt aliquet. Fusce laoreet ligula ac ultrices
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vehicula eros sit amet est tinc
+                idunt aliquet. Fusce laoreet ligula ac ultrices eleifend.lor sit amet, consectetur adipiscing el
+                it. Proin vehicula eros sit amet est tincidunt aliquet. Fusce laoreet ligula ac ultrices eleifend.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ========================================= Footer Para Section ========================================= -->
+
+  <section id="footer_para">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <p class="footer-para">
+            Movie Works (Pvt) Ltd., is an entertainment based company engaged
+            in building and operating state of the art luxury mini
+            cinemas and importing and distributing world class Hollywood and
+            Bollywood movies. We aim to provide the glory and the
+            magic of world cinema to the Sri Lankan patrons with all its original
+            quality and glamour with most modern technologies available.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ========================================= Main-Footer ========================================= -->
+
+  <section id="main_footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-4 text-start me-auto">
+          <a class="footer-logo-div me-auto" href="/">
+            <img src="img/mw_header_logo.png" class="img-fluid footer-logo text-start me-auto" alt="Lite-cinemas-logo">
+          </a>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="social-media-icons">
+            <div class="p-2">
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-facebook"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-youtube"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands px-3 fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h5 class="footer-h5">Movie Works (Pvt) Ltd</h5>
+          <p class="footer-para">No. 01<br>
+            ABC Mawatha,<br>
+            Colombo 04,<br>
+            Sri Lanka
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ======================================================Copyright-Footer================================================= -->
+
+  <footer id="main_copyright">
+    <div class="container">
+      <div class="row py-4 copyright-row">
+        <div class="col-md-12 text-center">
+          <p class="copyright_para"> Copyright © 2023 Movie Works (Pvt) Ltd. All Rights Reserved. Designed & Developed
+            by <a href="#">Archmage Solutions</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/custom.js"></script>
+
+  <script>
+
+
+    $(document).ready(function () {
+      $('.review-owl').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 1
+          }
+        }
+      })
+    });
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1061 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #050a2a !important;
+    color: #fff;
+}
+
+$primary: #5b85c3;
+$warning: #00276c;
+$danger: #ff4136;
+$secondary: #ffffff;
+$light: #F8F8F8;
+$mute: #ACACAC;
+$border: #5b85c3;
+// $success:#198754;
+
+$theme-colors: (
+    "primary": $primary,
+    "warning": $warning,
+    "danger": $danger,
+    "secondary": $secondary,
+    "light":$light,
+    "mute":$mute,
+    // "$success":$success,
+);
+
+$normal-font-size: 1rem;
+
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 3.2504;
+$h2-font-size: $font-size-base * 2.2504;
+$h3-font-size: $font-size-base * 2;
+$h4-font-size: $font-size-base * 1.7504;
+$h5-font-size: $font-size-base * 1.5;
+$h6-font-size: $font-size-base * 1.2;
+
+$display-font-sizes: (
+    1: 6.25rem,
+    //   2: 4.5rem,
+    //   3: 4rem,
+    //   4: 3.5rem,
+    //   5: 3rem,
+    //   6: 2.5rem
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 300;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #31d7a9;
+    text-decoration: none;
+}
+
+
+// buttons
+
+button.btn.btn-outline {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    width: 175px;
+    border-radius: 40px;
+}
+
+button.btn.btn-outline:hover {
+    color: #31d7a9 !important;
+    border: 2px solid #31d7a9;
+}
+
+
+button.btn.btn-border {
+    color: #5b85c3 !important;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #5b85c3;
+    width: 175px;
+    border-radius: 40px;
+}
+
+button.btn.btn-border:hover {
+    color: #31d7a9 !important;
+    border: 2px solid #31d7a9;
+}
+
+// =========================== Mobile Screens ===========================
+
+@media (max-width: 991px) {
+    
+    button.btn.btn-outline {
+        font-size: 10px;
+        width: 100px;
+    }
+   
+}
+
+@media (max-width: 767px) {
+  
+    button.btn.btn-outline {
+        font-size: 15px;
+        width: 135px;
+    }
+
+}
+
+
+a.btn.btn-primary {
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #fff;
+    width: 175px;
+    border-radius: 40px;
+}
+
+a.btn.btn-primary:hover {
+    color: #31d7a9;
+    border: 2px solid #31d7a9;
+}
+
+
+// =========================== Mobile Screens ===========================
+
+@media (max-width: 991px) {
+    
+    a.btn.btn-primary {
+        font-size: 10px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+  
+    a.btn.btn-primary {
+        font-size: 15px;
+        width: 135px;
+    }
+
+}
+// =========================== Navbar ===========================
+
+nav.navbar.navbar-expand-lg.fixed-top {
+    background: rgb(0,16,45);
+    background: linear-gradient(0deg, rgba(0,16,45,0) 0%, rgba(0,16,45,1) 100%);
+}
+
+img.img-fluid.header-logo {
+    width: 45%;
+    transition: 0.6s;
+}
+
+
+.scrolled-nav img.img-fluid.header-logo {
+    width: 40%;
+    transition: 0.6s;
+}
+
+a.nav-link {
+    color: #fff;
+    font-size: 18px;
+}
+
+a.nav-link:hover {
+    color: #5b85c3;
+    border-radius: 0px;
+}
+
+
+a.nav-link.active {
+    color: #5b85c3 !important;
+    font-weight: 600;
+}
+
+li.nav-item {
+    padding: 10px;
+}
+
+li.nav-item.buy-tkt.mt-auto.mb-auto {
+    background: #00276c;
+    padding: 0px 10px;
+    border-radius: 30px;
+}
+
+
+a.nav-link.buy-tkt {
+    font-weight: 500;
+}
+
+// =========================== Main Banner section ===========================
+
+img.banner-web {
+    object-fit: cover;
+    height: 550px;
+  }
+
+// =========================== movie name section ===========================
+
+section#name_section {
+    position: relative;
+    margin-top: -100px;
+}
+
+#name_section {
+    .row.name-row {
+        background: #00276c;
+        padding: 40px 35px;
+        color: #fff;
+    }
+    
+    h5.now-showing-h5 {
+        color: #31d7a9;
+    }
+
+    i.fa-solid.fa-star {
+        color: #f7961d;
+        font-size: 20px;
+    }
+} 
+
+
+h1.now-showing-topic {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px) {
+    
+    h1.now-showing-topic {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+  
+
+}
+
+// =========================== Now showing section ===========================
+
+section#now_showing {
+    background: #050a2a;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: #fff;
+}
+
+img.movie-img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-body {
+    background: #00276c;
+    border-radius: 0px 0px 5px 5px;
+}
+
+i.fa-solid.fa-star {
+    color: #f7961d;
+    font-size: 16px;
+}
+
+
+.bt-div {
+    border-top: 1px dashed #31d7a9;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+h4.movie-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.watch-text {
+    color: #31d7a9;
+    font-weight: 600;
+}
+
+.card {
+    border: 0px solid;
+}
+
+
+@media (max-width: 991px) {
+    
+    section#now_showing {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+}
+
+
+// =========================== owl nav side ===========================
+
+button.owl-next {
+    width: 50px;
+    font-size: 40px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    position: absolute;
+    right: -55px !important;
+    top: 37% !important;
+}
+
+button.owl-prev {
+    width: 50px;
+    font-size: 40px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    position: absolute;
+    left: -55px !important;
+    top: 37% !important;
+}
+
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: #31d7a9;
+}
+// =========================== Up Comming section ===========================
+
+section#up_comming {
+    background: #050a2a;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    
+    section#up_comming {
+        padding-bottom: 50px;
+    }
+
+}
+
+// =========================== Footer &  Copyright para section ===========================
+
+section#footer_para {
+    color: #fff;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    border-top: 1px solid #131c5b;    
+}
+
+
+section#main_footer {
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+
+p.copyright_para {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0px;
+}
+
+.copyright-row {
+    border-top: 1px solid #131c5b;
+}
+
+
+
+
+
+
+/* =========================== Movies Page ===========================
+=====================================================================*/
+
+
+
+// =========================== Movies Tag Section ===========================
+
+section#movie_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+
+/* =========================== Single Movies Page ===========================
+=====================================================================*/
+
+
+
+// =========================== Single Movies Tag Section ===========================
+
+section#single_movie_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+h2.single-movie-h2 {
+    margin-bottom: 15px;
+}
+
+h5.single-movie-genre {
+    color: #31d7a9;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h5.rate-now-h5 {
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+span.duration-tag {
+    padding-left: 25px;
+}
+
+
+// =========================== synopsis Section ===========================
+
+
+section#synopsis {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+// =========================== Theater Image Section ===========================
+
+section#movie_theater {
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.card-body.theater-card-body {
+    background: #050a2a;
+    color: #fff;
+    text-align: center;
+}
+
+.image-div.thater-img {
+    background: #050a2a;
+}
+
+// =========================== Review Section ===========================
+
+.review-item.item {
+    background: #07164c;
+}
+
+
+/* =========================== Theaters Page ===========================
+=====================================================================*/
+
+
+
+// =========================== Theater Tag Section ===========================
+
+section#theater_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+
+// =========================== Single Theater Tag Section ===========================
+
+section#single_theater_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+h5.single-theater-location {
+    color: #31d7a9;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+h5.theater-address {
+    margin-bottom: 15px;
+}
+
+span.theater-mail {
+    padding-left: 25px;
+}
+
+
+// =========================== Single Theater Details Section ===========================
+
+section#theater {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+
+// =========================== Single Theater Revies Section ===========================
+
+section#user_reviews {
+    background: #050a2a;
+    padding-top: 0px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+
+
+/* =========================== About Page ===========================
+=====================================================================*/
+
+section#about_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+section#about_details {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+/* =========================== Contact Page ===========================
+=====================================================================*/
+
+section#contact_tag {
+    background: #00276c;
+    padding: 40px 35px;
+    color: #fff;
+}
+
+section#contact_details {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+a.contact-theater-email {
+    color: #5b85c3;
+}
+
+a.contact-theater-email:hover {
+    color: #31d7a9;
+    text-decoration: none;
+}
+
+
+// buy tickets section
+
+
+input.form-control {
+    border: 1px solid;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+input#termscheck {
+    border-radius: 0px;
+    border: 1px solid #000;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+.nav-link:hover{
+    color: #5b85c3;
+    border-radius: 0px;
+}
+
+img.img-fluid.header-logo {
+    width: 40%;
+}
+
+nav.navbar.navbar-expand-lg {
+    background: #5b85c3;
+}
+
+
+button.nav-link {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px 26px;
+    border: 1px solid #5b85c3;
+}
+
+// ====================================================================================
+
+select.form-select {
+    border-radius: 6px!important;
+    padding: 5px 20px;
+    font-size: 24px;
+    color: #555!important;
+    border: 0px;
+}
+
+.bt-dropdown {
+    margin-top: -100px;
+}
+
+ul#myTab {
+    border-bottom: 4px solid #5b85c3;
+}
+
+.month, .day {
+    font-size: 18px;
+    line-height: 18px;
+}
+button#home-tab {
+    background-color: #5b85c3;
+    color: #fff;
+    border-radius: 0 !important;
+    border: 1px solid #5b85c3;
+    
+}
+
+button#home-tab:focus-visible {
+    border-radius: 0px !important;
+}
+
+button#home-tab:focus {
+    border-radius: 0px !important;
+}
+
+button#home-tab:focus-within {
+    border-radius: 0px !important;
+}
+
+button#home-tab:visited {
+    border-radius: 0px !important;
+}
+
+button#home-tab:target {
+    border-radius: 0px !important;
+}
+
+
+
+li.nav-item.bt-nav {
+    padding: 0px;
+}
+
+a.nav-link.active {
+    color: #000;
+    font-weight: 700;
+}
+    
+button.nav-link.active {
+    border-radius: 0px;
+    border: 1px solid;
+}
+
+
+
+
+p.theater-name {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+p.location {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+button.btn.show-time-btn {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+button.btn.show-time-btn:hover {
+    color: #5b85c3;
+}
+
+
+// ==========================modal============================
+
+.modal-body {
+    padding: 20px 0px 0px 0px;
+}
+
+.modal-content.buy-tkt-modal {
+    background: #000;
+    color: #fff;
+}
+
+.modal-header {
+    border-bottom: 1px solid #666666;
+}
+
+button.btn.btn-total {
+    background: #fff;
+    color: #000;
+    line-height: 23px;
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+.modal-body {
+    margin-top: 75px;
+}
+
+i.fa-solid.fa-circle-xmark.btn-close {
+    color: #fff;
+    font-size: 50px;
+    opacity: 1;
+}
+
+i.fa-solid.fa-circle-xmark.btn-close:hover {
+    opacity:0.7;
+}
+
+// seat plan area
+
+section#seat_plan {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #fff;
+}
+
+#seat_plan h4.date-time-h4 {
+    color: #000;
+}
+
+#seat_plan h6.ategory-price-h6 {
+    color: #000;
+}
+
+section#btn_section {
+    margin-bottom: 0px;
+    padding: 20px 20px;
+}
+
+h5.screen {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #666666;
+}
+
+
+#seat_plan a {
+    display: inline-block;
+    font-size: 10px;
+    line-height: 26px;
+    box-shadow: 0 0 0 1px #f09c0b inset;
+    height: 28px;
+    text-align: middle;
+    width: 30px;
+    border-radius: 26%;
+    color: #6c6c6c;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+
+#seat_plan a:hover {
+    color: #fff;
+    background: green;
+    text-decoration: none;
+    transform: scale(1.3);
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+a.unavilable {
+    color: #fff !important;
+    background: red;
+    text-decoration: none;
+    transition: .5s;
+}
+
+a.sold {
+    color: #fff !important;
+    background: green;
+    text-decoration: none;
+    transition: .5s;
+}
+
+tr {
+    border-color: #fff;
+}
+
+td.seat_row {
+    padding: 0px;
+}
+
+span.seat {
+    float: left;
+    margin: 4px 3px;
+    width: 24px;
+}
+
+
+
+// ======================= Showtimes =========================
+
+
+
+button.btn.showtime-btn.btn-secondary {
+    color: #555 !important;
+    font-weight: 500;
+    border: 0px;
+    background: #fff;
+    width: 160px;
+}
+
+
+
+button.btn.showtime-btn.btn-secondary:hover {
+    color: #fff !important;
+    background: #5b85c3;
+}
+
+
+h2.date-time-h2 {
+    margin-bottom: 0px;
+    padding: 15px 0px;
+}
+
+
+section#date_area {
+    margin-top: 100px;
+    background: #5b85c3;
+}
+
+
+
+// ========================= Billing Section =========================
+
+
+section#billing {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.billing-div {
+    padding: 20px 0px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 75px;
+}
+
+.billing-btn {
+    width: 45% !important; 
+}
+
+h5.billing-h5 {
+    margin-bottom: 0px;
+}
+
+img.visa-master-img {
+    width: 15%;
+}
+
+input#visamaster1 {
+    margin: 0px;
+}
+
+
+.row.billing-movie {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.row.billing-seat {
+    margin-bottom: 50px;
+}
+
+.row.customer-details {
+    margin-bottom: 50px;
+}
+
+.row.note-row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section#ticket {
+    background: #ebebeb;
+    color: #000;
+    padding: 25px;
+}
+
+.row.amout-row.align-middle {
+    background: #5b85c3;
+    padding: 20px 12px;
+}
+
+section#amout {
+    padding: 0px 12px;
+}
+
+.row.tkt-details-row {
+    position: relative;
+}
+
+.ticket-summary-div {
+    border-bottom: 1px dashed #000;
+}
+
+
+.ticket-summary-div::before {
+    content: "";
+    display: inline-block;
+    background: #050a2a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    left: -30px;
+    bottom: -24px;    
+}
+
+.ticket-summary-div::after {
+    content: "";
+    display: inline-block;
+    background: #050a2a;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: -30px;
+    bottom: -24px;    
+}
+
+
+img.qr-img {
+    width: 40%;
+}
+
+label.form-label {
+    color: #fff;
+}
+
+label.form-check-label {
+    color: #fff;
+}
+
+button.btn.btn-primary.billing-btn {
+    color: #fff;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button.btn.btn-border.billing-btn.me-3 {
+    color: #fff;
+    width: 200px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #5b85c3;
+}
+
+
+// ========================= Payment Declined ================
+
+section#declined_section {
+    color: #fff;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+i.fa-sharp.declined-close {
+    color: #ff0000;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+hr.declined-hr {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 70%;
+    border: 0.2px solid #000;
+    opacity: 1;
+}
+
+
+// ========================= footer ==========================
+    
+section#main_footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #000;
+    color: #fff;
+}
+
+h3.footer-h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p.footer-para {
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+}
+
+.copyright_para {
+    font-size: 14px;
+    color: #000;
+}
+
+.faq a {
+    color: #000;
+    font-size: 14px;
+}
+
+footer#main_copyright {
+    background: #5b85c3;
+}
+
+i.fa-brands {
+    color: #fff;
+    font-size: 50px;
+    opacity: 0.7;
+}
+
+i.fa-brands:hover {
+    opacity:1;
+}
+
+@media (max-width: 991px) {
+    
+    section#main_footer {
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    
+    section#footer_para {
+        margin-top: 25px;
+        padding-bottom: 50px;
+    }
+
+}
